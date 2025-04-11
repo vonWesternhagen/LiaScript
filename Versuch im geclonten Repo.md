@@ -1,4 +1,4 @@
-# Liascript zur Bruchrechnung
+# Liascript zur Bruchrechnung ist das das origian?
 
 Dieses Skript führt grundlegende Bruchrechnungen (Addition, Subtraktion, Multiplikation und Division) durch und kürzt die Ergebnisse, wenn möglich.
 
