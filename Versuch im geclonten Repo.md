@@ -1,31 +1,37 @@
-# Liascript zur Bruchrechnung ist das das origian?#
+<script>
+  // Title and Author
+  @title Flächeninhalt geometrischer Figuren
+  @author Deine Schule
+</script>
 
-Dieses Skript führt grundlegende Bruchrechnungen (Addition, Subtraktion, Multiplikation und Division) durch und kürzt die Ergebnisse, wenn möglich.
+# Einführung in die Flächenberechnung
 
-```liascript
-(* Bruchrechnungen *)
+Herzlich willkommen! In diesem Kurs lernst du, wie man den **Flächeninhalt** von verschiedenen **geometrischen Figuren** berechnet:
 
-(* Funktion zum Kürzen eines Bruchs *)
-kürze[Zähler, Nenner] :=
-  let
-    ggt := größterGemeinsamerTeiler[Zähler, Nenner]
-  in
-    (Zähler / ggt, Nenner / ggt)
+- 🛑 Dreieck  
+- 🔷 Parallelogramm  
+- 🔺 Trapez  
+- 🔷 Raute  
+- ❓ Beliebiges Viereck  
 
-(* Funktion zum Berechnen des größten gemeinsamen Teilers (ggT) *)
-größterGemeinsamerTeiler[a, b] :=
-  if b = 0 then
-    a
-  else
-    größterGemeinsamerTeiler[b, a mod b]
+---
 
-(* Addition von zwei Brüchen *)
-addiereBrüche[a1, b1, a2, b2] :=
-  let
-    gemeinsamerNenner := b1 * b2
-    neuerZähler := (a1 * b2) + (a2 * b1)
-  in
-    kürze[neuerZähler, gemeinsamerNenner]
+## 🛑 Dreieck
 
-(* Subtraktion von zwei Brüchen *)
-subtrahiereBrüche[a1, b1, a2,
+**Formel:**
+
+
+**Beispiel:**
+
+Eine Grundseite ist 6 cm lang, die Höhe beträgt 4 cm.
+
+
+### ▶ Übung:
+
+```exercise
+question: Berechne den Flächeninhalt eines Dreiecks mit Grundseite = 10 cm und Höhe = 5 cm.
+answer: 25
+hint: Formel: A = (Grundseite * Höhe) / 2
+A = Grundseite * Höhe
+A = 8 cm * 3 cm = 24 cm²
+ 
